@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "healthcare_msft_cma",
+    "description": "This pipeline ingests clinical FHIR NDJSON data into Delta tables in the bronze lakehouse, flattens it for the silver lakehouse, and transforms it for the Care Management analytical Gold lakehouse, ensuring a seamless flow from raw to refined data."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a6d5fc02-7fb5-98ba-4d9f-7d0c164afc1b"
+  }
+}

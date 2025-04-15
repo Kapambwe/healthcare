@@ -1,0 +1,114 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "a28dd2a2-523e-91c5-4d08-953124de7d9b",
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "parameters": {
+            "inline_params": {
+              "value": "{\"modality\":\"Imaging\",\"pipeline_runId\":\"@{pipeline().RunId}\",\"pipeline_name\":\"@{pipeline().PipelineName}\"}",
+              "type": "string"
+            }
+          }
+        },
+        "name": "raw_process_movement",
+        "description": "This notebook activity orchestrates file movement from the Ingest folder to the Process Folder and ensures the presence of all file names in the Process folder.\nPlease note that there should not be more than one instance of this notebook running as this will cause inconsistent results.",
+        "dependsOn": []
+      },
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "cd934b13-37ac-83d0-46fd-86206238cc4e",
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "parameters": {
+            "inline_params": {
+              "value": "{\"pipeline_runId\":\"@{pipeline().RunId}\",\"pipeline_name\":\"@{pipeline().PipelineName}\"}",
+              "type": "string"
+            }
+          }
+        },
+        "name": "imaging_dicom_extract_bronze_ingestion",
+        "description": "The extraction notebook activity helps extract metadata (DICOM tags) from the ingested DICOM dcm files.\nPlease note that there should not be more than one instance of this notebook running as this will cause inconsistent results.",
+        "dependsOn": [
+          {
+            "activity": "raw_process_movement",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "68c44fa0-3eb3-8900-424b-b4f7f2976639",
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "parameters": {
+            "inline_params": {
+              "value": "{\"pipeline_runId\":\"@{pipeline().RunId}\",\"pipeline_name\":\"@{pipeline().PipelineName}\"}",
+              "type": "string"
+            }
+          }
+        },
+        "name": "imaging_dicom_fhir_conversion",
+        "description": "The conversion notebook activity will then convert the metadata to the FHIR presentation of ImagingStudy in ndjson format.\nPlease note that there should not be more than one instance of this notebook running as this will cause inconsistent results.",
+        "dependsOn": [
+          {
+            "activity": "imaging_dicom_extract_bronze_ingestion",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "1af11fe8-2d93-8fd8-407b-bdbbf82963ec",
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "parameters": {
+            "inline_params": {
+              "value": "{\"pipeline_runId\":\"@{pipeline().RunId}\",\"pipeline_name\":\"@{pipeline().PipelineName}\"}",
+              "type": "string"
+            }
+          }
+        },
+        "name": "fhir_ndjson_bronze_ingestion",
+        "description": "This notebook activity facilitates the ingestion of FHIR ndjson data into Delta tables within the bronze lakehouse.\nPlease note that there should not be more than one instance of this notebook running as this will cause inconsistent results.",
+        "dependsOn": [
+          {
+            "activity": "imaging_dicom_fhir_conversion",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "b36a5ee5-ffc8-ad7a-4b12-00de128d87f1",
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "parameters": {
+            "inline_params": {
+              "value": "{\"pipeline_runId\":\"@{pipeline().RunId}\",\"pipeline_name\":\"@{pipeline().PipelineName}\"}",
+              "type": "string"
+            }
+          }
+        },
+        "name": "bronze_silver_flatten",
+        "description": "This notebook activity transforms and flattens the data from the bronze lakehouse and ingests the data into the silver lakehouse.\nPlease note that there should not be more than one instance of this notebook running as this will cause inconsistent results.",
+        "dependsOn": [
+          {
+            "activity": "fhir_ndjson_bronze_ingestion",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

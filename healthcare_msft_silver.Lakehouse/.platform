@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "healthcare_msft_silver"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d1447ffb-c948-86fa-4728-df1aa3ff574c"
+  }
+}

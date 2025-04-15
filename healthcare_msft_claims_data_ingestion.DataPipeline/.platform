@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "healthcare_msft_claims_data_ingestion",
+    "description": "This pipeline ingests claims data into delta tables and then to ClinicalFHIR table in the bronze lakehouse, flattens the data into the silver lakehouse."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cc43049c-5a89-9780-4da1-b023ffd590c1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../healthcare_msft_cma_semantic_model.SemanticModel"
+    }
+  }
+}

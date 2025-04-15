@@ -1,0 +1,400 @@
+{
+  "dependencies": [
+    {
+      "itemType": "Environment",
+      "itemObjectId": "7d7aaf4b-d582-83ad-4ac9-598ddc842ba0",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "Lakehouse",
+      "itemObjectId": "81ea6444-b252-a4b0-4d2a-7d684ea07e4b",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "Lakehouse",
+      "itemObjectId": "869bf9a3-5ceb-9a7c-43d7-1fdaaf1ee8e4",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "Lakehouse",
+      "itemObjectId": "d1447ffb-c948-86fa-4728-df1aa3ff574c",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "Lakehouse",
+      "itemObjectId": "f3d940a8-f9cc-b335-455b-2e700f273690",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "Pipeline",
+      "itemObjectId": "8f72b62d-3f70-8630-43e3-445a6de6581c",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "Pipeline",
+      "itemObjectId": "a6d5fc02-7fb5-98ba-4d9f-7d0c164afc1b",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "Pipeline",
+      "itemObjectId": "b1ea78c2-d3f5-ae89-4dfc-70f54f5f2fb5",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "Pipeline",
+      "itemObjectId": "c2524df9-3567-af02-4c4d-c2f46685a7ad",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "Pipeline",
+      "itemObjectId": "cc43049c-5a89-9780-4da1-b023ffd590c1",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "16a77441-4a29-b3ec-481d-1cc63799c4b2",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "1af11fe8-2d93-8fd8-407b-bdbbf82963ec",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "55117a9c-0a41-8dc2-42e6-f9d54c1e8588",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "68c44fa0-3eb3-8900-424b-b4f7f2976639",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "78be221e-72bc-91e6-428c-8cbe8f7531d2",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "7e42bceb-548d-be1f-4312-2f0af429e0a1",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "8ca28444-7416-8bef-45d2-77e05a1359cb",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "a28dd2a2-523e-91c5-4d08-953124de7d9b",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "a9ccf673-864c-8075-4108-2814e5ca05e8",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "b36a5ee5-ffc8-ad7a-4b12-00de128d87f1",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "cd934b13-37ac-83d0-46fd-86206238cc4e",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+      "itemType": "SynapseNotebook",
+      "itemObjectId": "e4972d48-6c35-8646-46d9-f5d216d50184",
+      "folderObjectId": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "indirectDependencies": [],
+  "itemContents": [
+    {
+      "name": "relational-fhir-data-foundations",
+      "version": "1.2.0",
+      "provisionState": "Active",
+      "deployedItems": {
+        "administration-lakehouse": {
+          "objectId": "81ea6444-b252-a4b0-4d2a-7d684ea07e4b",
+          "itemKey": "administration-lakehouse",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_admin",
+          "version": "1.2.0",
+          "itemType": "Lakehouse"
+        },
+        "hds-environment": {
+          "objectId": "7d7aaf4b-d582-83ad-4ac9-598ddc842ba0",
+          "itemKey": "hds-environment",
+          "provisionState": "Active",
+          "displayName": "healthcare_environment",
+          "version": "1.2.0",
+          "itemType": "Environment"
+        },
+        "bronze-lakehouse": {
+          "objectId": "869bf9a3-5ceb-9a7c-43d7-1fdaaf1ee8e4",
+          "itemKey": "bronze-lakehouse",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_bronze",
+          "version": "1.2.0",
+          "itemType": "Lakehouse"
+        },
+        "silver-lakehouse": {
+          "objectId": "d1447ffb-c948-86fa-4728-df1aa3ff574c",
+          "itemKey": "silver-lakehouse",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_silver",
+          "version": "1.2.0",
+          "itemType": "Lakehouse"
+        },
+        "setup-and-config-notebook": {
+          "objectId": "7e42bceb-548d-be1f-4312-2f0af429e0a1",
+          "itemKey": "setup-and-config-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_config_notebook",
+          "version": "1.2.0",
+          "itemType": "Notebook"
+        },
+        "raw-bronze-ingestion-notebook": {
+          "objectId": "1af11fe8-2d93-8fd8-407b-bdbbf82963ec",
+          "itemKey": "raw-bronze-ingestion-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_fhir_ndjson_bronze_ingestion",
+          "version": "1.2.0",
+          "itemType": "Notebook"
+        },
+        "silver-sample-flatten-extension-utility-notebook": {
+          "objectId": "78be221e-72bc-91e6-428c-8cbe8f7531d2",
+          "itemKey": "silver-sample-flatten-extension-utility-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_fhir_flattening_sample",
+          "version": "1.0.0",
+          "itemType": "Notebook"
+        },
+        "raw-process-movement-notebook": {
+          "objectId": "a28dd2a2-523e-91c5-4d08-953124de7d9b",
+          "itemKey": "raw-process-movement-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_raw_process_movement",
+          "version": "1.2.0",
+          "itemType": "Notebook"
+        },
+        "bronze-silver-flatten-notebook": {
+          "objectId": "b36a5ee5-ffc8-ad7a-4b12-00de128d87f1",
+          "itemKey": "bronze-silver-flatten-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_bronze_silver_flatten",
+          "version": "1.2.0",
+          "itemType": "Notebook"
+        },
+        "clinical-data-foundation-ingestion-pipeline": {
+          "objectId": "8f72b62d-3f70-8630-43e3-445a6de6581c",
+          "itemKey": "clinical-data-foundation-ingestion-pipeline",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_clinical_data_foundation_ingestion",
+          "version": "1.2.0",
+          "itemType": "DataPipeline"
+        },
+        "internal-config-data": {
+          "objectId": "00000000-0000-0000-0000-000000000000",
+          "itemKey": "internal-config-data",
+          "provisionState": "Active",
+          "displayName": "Config Data",
+          "version": "1.2.0",
+          "itemType": "ConfigData"
+        }
+      }
+    },
+    {
+      "name": "sample-data",
+      "version": "1.2.0",
+      "provisionState": "Active",
+      "deployedItems": {
+        "dm4h-sdoh-data": {
+          "objectId": "00000000-0000-0000-0000-000000000000",
+          "itemKey": "dm4h-sdoh-data",
+          "provisionState": "Active",
+          "displayName": "8SDOHPublicDatasets",
+          "version": "1.2.0",
+          "itemType": "SampleData"
+        },
+        "dm4h-cclfclaims-data": {
+          "objectId": "00000000-0000-0000-0000-000000000000",
+          "itemKey": "dm4h-cclfclaims-data",
+          "provisionState": "Active",
+          "displayName": "8KCCLFClaims",
+          "version": "1.0.0",
+          "itemType": "SampleData"
+        },
+        "dmh4h-sampledata": {
+          "objectId": "00000000-0000-0000-0000-000000000000",
+          "itemKey": "dmh4h-sampledata",
+          "provisionState": "Active",
+          "displayName": "51KSyntheticPatients",
+          "version": "1.0.0",
+          "itemType": "SampleData"
+        },
+        "dm4h-imaging-data": {
+          "objectId": "00000000-0000-0000-0000-000000000000",
+          "itemKey": "dm4h-imaging-data",
+          "provisionState": "Active",
+          "displayName": "340ImagingStudies",
+          "version": "1.0.0",
+          "itemType": "SampleData"
+        }
+      }
+    },
+    {
+      "name": "claims-data-ingestion",
+      "version": "1.2.0",
+      "provisionState": "Active",
+      "deployedItems": {
+        "claims-fhir-conversion-notebook": {
+          "objectId": "16a77441-4a29-b3ec-481d-1cc63799c4b2",
+          "itemKey": "claims-fhir-conversion-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_claims_fhir_conversion",
+          "version": "1.2.0",
+          "itemType": "Notebook"
+        },
+        "claims-landing-zone-delta-tables-ingestion-notebook": {
+          "objectId": "55117a9c-0a41-8dc2-42e6-f9d54c1e8588",
+          "itemKey": "claims-landing-zone-delta-tables-ingestion-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_claims_extract_bronze_ingestion",
+          "version": "1.2.0",
+          "itemType": "Notebook"
+        },
+        "claims-data-ingestion-pipeline": {
+          "objectId": "cc43049c-5a89-9780-4da1-b023ffd590c1",
+          "itemKey": "claims-data-ingestion-pipeline",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_claims_data_ingestion",
+          "version": "1.2.0",
+          "itemType": "DataPipeline"
+        }
+      }
+    },
+    {
+      "name": "dicom-data-ingestion",
+      "version": "1.2.0",
+      "provisionState": "Active",
+      "deployedItems": {
+        "dicom-fhir-conversion-notebook": {
+          "objectId": "68c44fa0-3eb3-8900-424b-b4f7f2976639",
+          "itemKey": "dicom-fhir-conversion-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_imaging_dicom_fhir_conversion",
+          "version": "1.2.0",
+          "itemType": "Notebook"
+        },
+        "dicom-extract-bronze-ingestion-notebook": {
+          "objectId": "cd934b13-37ac-83d0-46fd-86206238cc4e",
+          "itemKey": "dicom-extract-bronze-ingestion-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_imaging_dicom_extract_bronze_ingestion",
+          "version": "1.2.0",
+          "itemType": "Notebook"
+        },
+        "imaging-with-clinical-foundation-ingestion-pipeline": {
+          "objectId": "c2524df9-3567-af02-4c4d-c2f46685a7ad",
+          "itemKey": "imaging-with-clinical-foundation-ingestion-pipeline",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_imaging_with_clinical_foundation_ingestion",
+          "version": "1.2.0",
+          "itemType": "DataPipeline"
+        }
+      }
+    },
+    {
+      "name": "social-determinants-of-health",
+      "version": "1.2.0",
+      "provisionState": "Active",
+      "deployedItems": {
+        "sdoh-bronze-ingestion-notebook": {
+          "objectId": "8ca28444-7416-8bef-45d2-77e05a1359cb",
+          "itemKey": "sdoh-bronze-ingestion-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_sdoh_raw_extract_bronze_ingestion",
+          "version": "1.2.0",
+          "itemType": "Notebook"
+        },
+        "sdoh-silver-ingestion-notebook": {
+          "objectId": "e4972d48-6c35-8646-46d9-f5d216d50184",
+          "itemKey": "sdoh-silver-ingestion-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_sdoh_bronze_silver_flatten",
+          "version": "1.2.0",
+          "itemType": "Notebook"
+        },
+        "sdoh-pipelinee": {
+          "objectId": "b1ea78c2-d3f5-ae89-4dfc-70f54f5f2fb5",
+          "itemKey": "sdoh-pipelinee",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_sdoh_ingestion",
+          "version": "1.2.0",
+          "itemType": "DataPipeline"
+        },
+        "dm4h-sdoh-location-data": {
+          "objectId": "00000000-0000-0000-0000-000000000000",
+          "itemKey": "dm4h-sdoh-location-data",
+          "provisionState": "Active",
+          "displayName": "ZIPToFIPSMapping",
+          "version": "1.2.0",
+          "itemType": "SampleData"
+        }
+      }
+    },
+    {
+      "name": "care-management-analytics",
+      "version": "1.2.0",
+      "provisionState": "Active",
+      "deployedItems": {
+        "cma-gold-lakehouse": {
+          "objectId": "f3d940a8-f9cc-b335-455b-2e700f273690",
+          "itemKey": "cma-gold-lakehouse",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_gold_cma",
+          "version": "1.2.0",
+          "itemType": "Lakehouse"
+        },
+        "cma-semantic-model": {
+          "objectId": "1ef31990-ee4a-46ec-97c0-0cd13154e20b",
+          "itemKey": "cma-semantic-model",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_cma_semantic_model",
+          "version": "1.2.0",
+          "itemType": "SemanticModel"
+        },
+        "cma-gold-ingestion-notebook": {
+          "objectId": "a9ccf673-864c-8075-4108-2814e5ca05e8",
+          "itemKey": "cma-gold-ingestion-notebook",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_cma_silver_gold_transformation",
+          "version": "1.2.0",
+          "itemType": "Notebook"
+        },
+        "cma-pipeline": {
+          "objectId": "a6d5fc02-7fb5-98ba-4d9f-7d0c164afc1b",
+          "itemKey": "cma-pipeline",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_cma",
+          "version": "1.2.0",
+          "itemType": "DataPipeline"
+        },
+        "cma-pbi-report": {
+          "objectId": "1e375e70-db39-4a6d-b7b7-3d546d08d2f0",
+          "itemKey": "cma-pbi-report",
+          "provisionState": "Active",
+          "displayName": "healthcare_msft_cma_report",
+          "version": "1.2.0",
+          "itemType": "Report"
+        }
+      }
+    }
+  ],
+  "configurationCategories": []
+}

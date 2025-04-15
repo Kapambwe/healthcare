@@ -1,0 +1,68 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "a28dd2a2-523e-91c5-4d08-953124de7d9b",
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "parameters": {
+            "inline_params": {
+              "value": "{\"modality\":\"SDOH\",\"pipeline_runId\":\"@{pipeline().RunId}\",\"pipeline_name\":\"@{pipeline().PipelineName}\"}",
+              "type": "string"
+            }
+          }
+        },
+        "name": "raw_process_movement",
+        "description": "This notebook will leverage the Healthcare Data Solutions library to move/extract (extract ZIP files and move) files for multiple HDS modalities, which contain various namespaces and file extensions. This framework will move/extract (extract ZIP files and move) files based on the 'file_orchestration_config' configuration, which contains mapping details such as modality, modality_format, extension etc.\nPlease note that there should not be more than one instance of this notebook running as this will cause inconsistent results.",
+        "dependsOn": []
+      },
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "8ca28444-7416-8bef-45d2-77e05a1359cb",
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "parameters": {
+            "inline_params": {
+              "value": "{\"pipeline_runId\":\"@{pipeline().RunId}\",\"pipeline_name\":\"@{pipeline().PipelineName}\"}",
+              "type": "string"
+            }
+          }
+        },
+        "name": "sdoh_bronze_ingestion",
+        "description": "This notebook activity facilitates the ingestion of SDOH public data sets into Delta tables within the bronze lakehouse.\nPlease note that there should not be more than one instance of this notebook running as this will cause inconsistent results.",
+        "dependsOn": [
+          {
+            "activity": "raw_process_movement",
+            "dependencyConditions": [
+              "Completed"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "e4972d48-6c35-8646-46d9-f5d216d50184",
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "parameters": {
+            "inline_params": {
+              "value": "{\"pipeline_runId\":\"@{pipeline().RunId}\",\"pipeline_name\":\"@{pipeline().PipelineName}\"}",
+              "type": "string"
+            }
+          }
+        },
+        "name": "sdoh_silver_ingestion",
+        "description": "This notebook activity transforms the SDOH public datasets from the bronze lakehouse and ingests the data into the silver lakehouse.\nPlease note that there should not be more than one instance of this notebook running as this will cause inconsistent results.",
+        "dependsOn": [
+          {
+            "activity": "sdoh_bronze_ingestion",
+            "dependencyConditions": [
+              "Completed"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "healthcare_msft_sdoh_raw_extract_bronze_ingestion"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8ca28444-7416-8bef-45d2-77e05a1359cb"
+  }
+}

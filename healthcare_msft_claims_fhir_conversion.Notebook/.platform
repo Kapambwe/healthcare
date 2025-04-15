@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "healthcare_msft_claims_fhir_conversion"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "16a77441-4a29-b3ec-481d-1cc63799c4b2"
+  }
+}
